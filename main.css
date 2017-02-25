@@ -1,0 +1,11 @@
+.container {
+	display: inline-flex;
+	width: 100%;
+}
+.orderForm {
+	width: 50%;
+}
+.confirmation {
+	width: 50%;
+	margin-top: 100px;
+}
