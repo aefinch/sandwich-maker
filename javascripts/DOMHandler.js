@@ -22,9 +22,10 @@ var veggieConf = document.getElementById("veggieOrdered");
 breadChooser.addEventListener("change", function(event){
 	selectedTopping = event.target.value;
 	breadPrice = SandwichMaker.addBreadPrice(selectedTopping);
-	console.log(SandwichMaker.addBread(selectedTopping));
-	console.log(breadPrice);
 	breadConf.innerHTML = selectedTopping + "<br>"
+
+	var totalPrice = SandwichMaker.addTopping(breadPrice);
+	console.log(totalPrice);
 });
 meatChooser.addEventListener("change", function(event) {
   // Get the value chosen from the DOM
@@ -38,6 +39,8 @@ meatChooser.addEventListener("change", function(event) {
  	for (var i=0; i<chosenMeats.length; i++) {
   	meatConf.innerHTML+=chosenMeats[i] + "<br>";
  	}
+	var totalPrice = SandwichMaker.addTopping(meatPrice);
+	console.log(totalPrice);
 
 });
 cheeseChooser.addEventListener("change", function(event) {
@@ -48,6 +51,8 @@ cheeseChooser.addEventListener("change", function(event) {
 	for (var j=0; j<chosenCheese.length; j++) {
 		cheeseConf.innerHTML+=chosenCheese[j] + "<br>";
 	}
+	var totalPrice = SandwichMaker.addTopping(cheesePrice);
+	console.log(totalPrice);
 	
 });
 sauceChooser.addEventListener("change", function(event) {
@@ -58,6 +63,8 @@ sauceChooser.addEventListener("change", function(event) {
 	for (var k=0; k<chosenSauce.length; k++) {
 		sauceConf.innerHTML+=chosenSauce[k] + "<br>";
 	}
+	var totalPrice = SandwichMaker.addTopping(saucePrice);
+	console.log(totalPrice);
 });
 veggieChooser.addEventListener("change", function(event) {
 	selectedTopping = event.target.value;
@@ -67,7 +74,8 @@ veggieChooser.addEventListener("change", function(event) {
 	for (var m=0; m<chosenVeggie.length; m++) {
 		veggieConf.innerHTML+=chosenVeggie[m] + "<br>";
 	}
-	
+	var totalPrice = SandwichMaker.addTopping(veggiePrice);
+	console.log(totalPrice);
 });
 
 
