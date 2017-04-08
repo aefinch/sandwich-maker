@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sandwich Maker</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div class="container">
+		<form class="orderForm">
+			<h1>Create your Sandwich</h1>
+			<div id="breadChooser">
+				<label for="bread">Carb Up!</label><br>
+				<input type="radio" name="bread" value="white">White <br>
+				<input type="radio" name="bread" value="wheat">Wheat <br>
+				<input type="radio" name="bread" value="rye">Rye <br>
+				<input type="radio" name="bread" value="pumpernickel">Pumpernickel <br>
+				<input type="radio" name="bread" value="flour tortilla">Flour Tortilla <br>
+				<br>
+			</div>
+			<div id="meatChooser">
+				<label for="meat">Manage your meat(s)!</label><br>
+				<label><input type="checkbox" class="meat" id="meatbox1" value="turkey">Turkey</label><br>
+				<label><input type="checkbox" class="meat" id="meatbox2" value="chicken">Chicken</label><br>
+				<label><input type="checkbox" class="meat" id="meatbox3" value="ham">Ham</label><br>
+				<label><input type="checkbox" class="meat" id="meatbox4" value="roastBeef">Roast Beef</label><br>
+				<label><input type="checkbox" class="meat" id="meatbox5" value="bacon">Bacon</label><br>
+				<label><input type="checkbox" class="meat" id="meatbox6" value="pastrami">Pastrami</label><br>
+				<label><input type="checkbox" class="meat" id="meatbox7" value="tuna">Tuna</label><br>
+			</div>
+			<br>
+			<div id="cheeseChooser">
+				<label for="cheese">Choose your cheese(s)!</label><br>
+				<label><input type="checkbox" id="cheesebox1" value="swiss">Swiss</label><br>
+				<label><input type="checkbox" id="cheesebox2" value="cheddar">Cheddar</label><br>
+				<label><input type="checkbox" id="cheesebox3" value="provolone">Provolone</label><br>
+				<label><input type="checkbox" id="cheesebox4" value="meunster">Meunster</label><br>
+				<label><input type="checkbox" id="cheesebox5" value="mozzarella">Mozzarella</label><br>
+				<br>
+			</div>
+			<div id="sauceChooser">
+				<label for="condiments">Select your sauce(s)!</label><br>
+				<label><input type="checkbox" id="saucebox1" value="mustard">Mustard</label><br>
+				<label><input type="checkbox" id="saucebox2" value="mayo">Mayo</label><br>
+				<label><input type="checkbox" id="saucebox3" value="ranch">Ranch</label><br>
+				<label><input type="checkbox" id="saucebox4" value="oil-vinegar">Oil and Vinegar</label><br>
+				<label><input type="checkbox" id="saucebox5" value="horseradish">Horseradish</label><br>
+				<label><input type="checkbox" id="saucebox6" value="barbecue">Barbecue</label><br>
+				<br>
+			</div>
+			<div id="veggieChooser">
+				<label for="veggies"> Veg Out!</label><br>
+				<label><input type="checkbox" id="vegbox1" value="lettuce">Lettuce</label><br>
+				<label><input type="checkbox" id="vegbox2" value="tomato">Tomato</label><br>
+				<label><input type="checkbox" id="vegbox3" value="onion">Onion</label><br>
+				<label><input type="checkbox" id="vegbox4" value="cucumber">Cucumber</label><br>
+				<label><input type="checkbox" id="vegbox5" value="pickles">Pickles</label><br>
+				<label><input type="checkbox" id="vegbox6" value="b-peppers">Banana Peppers</label><br>
+				<label><input type="checkbox" id="vegbox7" value="jalapeno">Jalapenos</label><br>
+				<br>
+			</div>
+			
+		</form>
+		<div class="confirmation">
+			Order confirmation:
+			<br><br>
+			<div id="breadOrdered">
+			</div>
+			<div id="meatOrdered">
+			</div>
+			<div id="cheeseOrdered">
+			</div>
+			<div id="sauceOrdered">
+			</div>
+			<div id="veggieOrdered">
+			</div>
+			<div id="finalPrice">
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="/javascripts/sandwichMaker.js"></script>
+	<script type="text/javascript" src="/javascripts/bread.js"></script>
+	<script type="text/javascript" src="/javascripts/meat.js"></script>
+	<script type="text/javascript" src="/javascripts/cheese.js"></script>
+	<script type="text/javascript" src="/javascripts/sauce.js"></script>
+	<script type="text/javascript" src="/javascripts/veggie.js"></script>
+	<script type="text/javascript" src="/javascripts/DOMHandler.js"></script>
+</body>
+</html>
