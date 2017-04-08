@@ -6,7 +6,7 @@ var SandwichMaker = (function(maker) {
   	"mustard": 0.25,
   	"mayo": 0.25,
   	"ranch": 0.50,
-  	"oilVinegar": 0.25,
+  	"oil-vinegar": 0.25,
   	"horseradish": 0.50,
   	"barbecue": 0.25
   	}
